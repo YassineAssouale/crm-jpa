@@ -1,3 +1,18 @@
+# gitignore
+.gitignore
+
+# Target Folder
+target/
+
+# Class path
+.classpath
+
+# Settings
+.settings
+
+# Project
+.project
+
 # Compiled class file
 *.class
 
