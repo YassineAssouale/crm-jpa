@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="users")
 //@NamedQuery(name = "User.findByActive", query = "SELECT u FROM User u WHERE u.active = :active")
-@NamedQuery(name="User.findByUsernameAndPassword", query="SELECT u FROM User WHERE u.username=:username and u.password=:password")
+@NamedQuery(name = "User.findByUsernameAndPassword", query="SELECT u FROM User u WHERE u.username=:username and u.password=:password")
 public class User implements Serializable{
 	
 	private static final long serialVersionUID = 7555071581414458777L;
@@ -26,19 +26,19 @@ public class User implements Serializable{
 	@Column(length = 100)
 	private String password;
 	@Column(length = 100)
-	private String email;
+	private String mail;
 	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(Integer id, String username, String password, String email) {
+	public User(Integer id, String username, String password, String mail) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
-		this.email = email;
+		this.mail = mail;
 	}
 
 	public Integer getId() {
@@ -65,17 +65,17 @@ public class User implements Serializable{
 		this.password = password;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getMail() {
+		return mail;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setMail(String mail) {
+		this.mail = mail;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", email=" + email + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", mail=" + mail + "]";
 	}
 	
 	

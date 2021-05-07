@@ -23,7 +23,7 @@ public class Order implements Serializable{
 	private static final long serialVersionUID = 5087070270529990806L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
 	@Column(length = 100)
