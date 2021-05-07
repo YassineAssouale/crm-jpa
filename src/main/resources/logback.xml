@@ -9,10 +9,10 @@
     </appender>
     
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>F:/Users/yassi/Documents/projets/logs/crm-jpa.log</file>
+        <file>D:/Users/yassi/Documents/projets/logs/crm-jpa.log</file>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>F:/Users/yassi/Documents/projets/logs/archived/app.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <fileNamePattern>D:/Users/yassi/Documents/projets/logs/archived/app.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
             <!-- Taille d'un fichier -->
             <maxFileSize>10MB</maxFileSize>
             <!-- Taille max des archives, si ça dépasse, suppression des anciennes archives -->

@@ -10,7 +10,7 @@ INSERT INTO orders (customer_id, label, adr_et, number_of_days, tva, status, typ
 
 INSERT INTO orders (customer_id, label, adr_et, number_of_days, tva, status, type, notes) VALUES (1, 'Formation Spring', 450.0, 3, 20.0, 'En attente', 'Forfait', 'Test');
 
-INSERT INTO orders (customer_id, label, adr_et, number_of_days, tva, status, type, notes) VALUES (2, 'Formation Jedi', 1500.0, 2, 20.0, 'PayÃ©e', 'Forfait', 'Notes sur la formation');
+INSERT INTO orders (customer_id, label, adr_et, number_of_days, tva, status, type, notes) VALUES (2, 'Formation Jedi', 1500.0, 2, 20.0, 'Payée', 'Forfait', 'Notes sur la formation');
 
 INSERT INTO users (id, username, password, mail) VALUES (1,'tliotard','mdp49','t.liotard@gmail.com');
 

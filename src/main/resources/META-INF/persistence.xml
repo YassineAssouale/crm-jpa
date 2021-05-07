@@ -24,9 +24,9 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 	</persistence-unit>
 	
 	<persistence-unit name="crm-test"
-		transaction-type="RESOURCE_LOCAL">
-		<class>fr.m2i.crm.model.Customer</class>
-		<class>fr.m2i.crm.model.Order</class>
+		transaction-type="RESOURCE_LOCAL"> <!-- RESOURCE_LOCAL OR JTA : Java Transaction API -->
+		<class>ya.crm.model.Customer</class>
+		<class>ya.crm.model.Order</class>
 		<properties>
 			<!-- database connection : h2
 			-->
@@ -42,5 +42,4 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 			<property name="hibernate.show_sql" value="true" />
 		</properties>
 	</persistence-unit>
-
 </persistence>
