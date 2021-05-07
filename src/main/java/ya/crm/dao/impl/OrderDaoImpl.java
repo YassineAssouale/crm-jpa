@@ -22,7 +22,7 @@ public class OrderDaoImpl implements OrderDao{
 	
 	Logger logger = LoggerFactory.getLogger(CustomerDaoImpl.class);
 	
-	EntityManager em;
+	private EntityManager em;
 	
 	public OrderDaoImpl(EntityManager entityManager) {
 		this.em = entityManager;

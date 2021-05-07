@@ -19,8 +19,10 @@ import ya.crm.model.Customer;
 
 public class CustomerDaoImpl implements CustomerDao{
 	// Log
+	// SLF4J implementation : Logger interface
 	Logger logger = LoggerFactory.getLogger(CustomerDaoImpl.class);
 	
+	// EntityManager : Interface used to interact with the persistence context. 
 	private EntityManager em;
 	
 	public CustomerDaoImpl(EntityManager entityManager) {
